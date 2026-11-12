@@ -1,0 +1,7 @@
+.DS_Store
+node_modules/
+.vercel/
+legacy_backup/
+assets/certificates/extracted_ocr.json
+assets/certificates/extracted/*
+!assets/certificates/extracted/Scan3_p07.jpg

@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Портфолио Андрея Подгорного — проекты, достижения, сертификаты и образование">
+  <title>Андрей Подгорный • Портфолио, Проекты & Достижения</title>
+
+  <!-- Stylesheets -->
+  <script src="js/theme.js"></script><link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/redesign.css"><link rel="stylesheet" href="css/project-covers.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#about" class="nav-brand">
+        <span class="brand-monogram">AP</span>
+        <span>Андрей Подгорный</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link active">Обо мне</a></li>
+        <li><a href="#projects" class="nav-link">Проекты</a></li>
+        <li><a href="#olympiads" class="nav-link">Достижения</a></li>
+        <li><a href="certificates.html" class="nav-link">Сертификаты</a></li>
+        <li><a href="experience.html" class="nav-link">Опыт</a></li>
+        <li><a href="#cv" class="nav-link">CV</a></li>
+      </ul>
+
+      <div class="nav-actions">
+
+        <button class="btn-icon" id="themeToggleBtn" title="Сменить тему оформления">
+          <span id="themeIcon">☀️</span>
+        </button>
+
+        <button class="nav-mobile-toggle" id="navMobileToggle" aria-label="Открыть меню">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="about">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <div class="hero-status">
+              <span class="status-dot"></span>
+              <span>Алматы · Президент физмат-отделения Tamos Education</span>
+            </div>
+
+            <h1 class="hero-title">
+              <span class="hero-title-line"><span>Андрей</span></span>
+              <span class="hero-title-line"><span class="text-gradient">Подгорный.</span></span>
+            </h1>
+
+            <p class="hero-subtitle">
+              Проекты на стыке бизнеса, технологий и образования.
+            </p>
+
+            <p class="hero-description">
+              Разрабатываю и анализирую проектные решения в сферах финансов, образования и цифровых сервисов. В проектах изучаю аудиторию, формирую бизнес-модель, рассчитываю экономику и представляю рекомендации. Основные кейсы — TrueAvail, Parqour, Kid Investments, Arlan’s Delivery и UNIGATE.
+            </p>
+
+            <div class="hero-pills">
+              <span class="pill">Финансовые модели и юнит-экономика</span>
+              <span class="pill">Исследование рынка и аудитории</span>
+              <span class="pill">Продуктовые концепции</span>
+              <span class="pill">Школьное лидерство</span>
+              <span class="pill">STEMCO Math — Gold Award</span>
+            </div>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">Смотреть проекты <span aria-hidden="true">↗</span></a>
+              <a href="assets/cv/Andrey_Podgorny_CV.pdf" download class="btn btn-secondary">Скачать CV</a>
+              <a href="certificates.html" class="hero-text-link">Сертификаты и награды <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="avatar-card">
+              <div class="avatar-img-wrap">
+                <img src="assets/profile/profile.jpg" alt="Андрей Подгорный" class="avatar-img">
+              </div>
+              <div class="avatar-floating-card">
+                <div class="floating-icon">🎯</div>
+                <div>
+                  <div class="floating-title">Фокус на ценности & цифрах</div>
+                  <div class="floating-desc">Прикладная юнит-экономика, глубокий анализ данных и измеримый эффект</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected portfolio facts -->
+    <section class="metrics-section"><div class="container"><div class="metrics-grid">
+      <div class="metric-card"><div class="metric-value">25</div><div class="metric-label">Проектов и кейсов в архиве</div></div>
+      <div class="metric-card"><div class="metric-value">19</div><div class="metric-label">Сертификатов, наград и рекомендаций</div></div>
+      <div class="metric-card"><div class="metric-value">Gold</div><div class="metric-label">STEMCO International Math</div></div>
+      <div class="metric-card"><div class="metric-value">2026</div><div class="metric-label">Президент физмат-отделения Tamos Education</div></div>
+    </div></div></section>
+
+    <!-- Project archive -->
+    <section class="section" id="projects"><div class="container">
+      <div class="section-header"><span class="section-tag">Проектный опыт</span><h2 class="section-title">Проекты и кейсы</h2><p class="section-subtitle">Каталог учебных кейсов, продуктовых концепций и организационных проектов. В карточках отдельно указаны статус и подтверждённые результаты.</p></div>
+      <div class="projects-filter-bar">
+        <button class="filter-btn active" data-project-filter="all">Все проекты</button>
+        <button class="filter-btn" data-project-filter="fintech">Финансы и FinTech</button>
+        <button class="filter-btn" data-project-filter="consulting">Стратегия</button>
+        <button class="filter-btn" data-project-filter="education">Образование</button>
+        <button class="filter-btn" data-project-filter="service">Сервисы</button>
+        <button class="filter-btn" data-project-filter="business">Бизнес-кейсы</button>
+        <button class="filter-btn" data-project-filter="marketing">Маркетинг</button>
+        <button class="filter-btn" data-project-filter="product">Продукт</button>
+        <button class="filter-btn" data-project-filter="leadership">Лидерство</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid"><p class="empty-state">Загружаю каталог проектов…</p></div>
+    </div></section>
+
+    <!-- ==========================================================================
+         OFFICIAL RECOMMENDATIONS & ENDORSEMENTS
+         ========================================================================== -->
+    <section class="section" id="recommendations">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Признание экспертов</span>
+          <h2 class="section-title">Официальные Рекомендации & Отзывы</h2>
+          <p class="section-subtitle">
+            Оценки преподавателей, топ-менеджеров и академических руководителей по итогам совместной работы и защит
+          </p>
+        </div>
+
+        <div class="recommendations-grid">
+          
+          <!-- Recommendation 1: Eldos Aibekov -->
+          <div class="recommendation-card">
+            <div>
+              <div class="rec-quote-mark">“</div>
+              <p class="rec-text">
+                «Андрей проявил себя как креативный лидер и амбассадор проекта Arlan's Delivery — сервиса доставки из школьного буфета. Он сыграл ключевую роль в продвижении идеи, разработке концепции и её представлении. Его умение формировать стратегию, анализировать потребности аудитории и находить нестандартные решения делает его перспективным молодым предпринимателем. Андрей продемонстрировал ответственность, командную работу и аналитическое мышление...»
+              </p>
+            </div>
+
+            <div class="rec-author">
+              <div class="rec-author-info">
+                <div class="rec-avatar">ЕА</div>
+                <div>
+                  <div class="rec-name">Айбеков Елдос</div>
+                  <div class="rec-role">CEO Comfort Asia • Преподаватель бизнеса Tamos Education</div>
+                </div>
+              </div>
+
+              <button class="btn btn-sm btn-secondary" onclick="window.lightbox.open({title: 'Рекомендательное письмо: Айбеков Елдос', issuer: 'Aibekov Group / Tamos Education (27.02.2025)', image: 'assets/letters/recommendation_aibekov_2025.jpg'});">
+                📄 Смотреть оригинал ➔
+              </button>
+            </div>
+          </div>
+
+          <!-- Recommendation 2: Veronika Tsyganova -->
+          <div class="recommendation-card">
+            <div>
+              <div class="rec-quote-mark">“</div>
+              <p class="rec-text">
+                «За 7 лет в бизнес-школе Kinder MBA и проектном треке "Бизнес Созидания" при поддержке Экономического факультета МГУ Андрей прошел путь от первых учебных идей до комплексных бизнес-исследований для крупных брендов (ВкусВилл, Детский мир, АТБ, Райффайзенбанк). Неоднократно занимал призовые места в кейс-чемпионатах, демонстрируя выдающуюся глубину финансового анализа, уверенную риторику и зрелый подход к решению сложных задач.»
+              </p>
+            </div>
+
+            <div class="rec-author">
+              <div class="rec-author-info">
+                <div class="rec-avatar">ВЦ</div>
+                <div>
+                  <div class="rec-name">Цыганова Вероника Сергеевна</div>
+                  <div class="rec-role">Руководитель департамента Kinder MBA / Бизнес Созидание (ЭФ МГУ)</div>
+                </div>
+              </div>
+
+              <a href="certificates.html?q=Бизнес+Созидания" class="btn btn-sm btn-secondary">
+                🏆 Смотреть дипломы ➔
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         OLYMPIADS & ACADEMIC HONORS SECTION
+         ========================================================================== -->
+    <section class="section" id="olympiads">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Академические достижения</span>
+          <h2 class="section-title">Олимпиады & Международные Турниры</h2>
+          <p class="section-subtitle">
+            Победы и призовые места в престижных соревнованиях по математике, естественным наукам и предпринимательству
+          </p>
+        </div>
+
+        <div class="olympiads-grid">
+          
+          <div class="olympiad-card">
+            <div>
+              <div class="olympiad-header">
+                <div class="olympiad-medal">🥇</div>
+                <span class="badge badge-gold">Gold Award</span>
+              </div>
+              <h3 class="olympiad-title">STEMCO International Mathematics Olympiad</h3>
+              <div class="olympiad-org">StemCo International • Сингапур (Весна 2024)</div>
+              <p class="olympiad-desc">
+                Золотая награда в престижном международном соревновании по высшей математике среди участников из десятков стран мира.
+              </p>
+            </div>
+            <div class="olympiad-footer">
+              <span>Категория: Math 7-8</span>
+              <a href="certificates.html?q=STEMCO+Gold" style="color: var(--accent-secondary); font-weight: 600;">Диплом ➔</a>
+            </div>
+          </div>
+
+          <div class="olympiad-card">
+            <div>
+              <div class="olympiad-header">
+                <div class="olympiad-medal">🥈</div>
+                <span class="badge">Silver Award</span>
+              </div>
+              <h3 class="olympiad-title">STEMCO International Mathematics Olympiad</h3>
+              <div class="olympiad-org">StemCo International • Сингапур (Февраль 2025)</div>
+              <p class="olympiad-desc">
+                Серебряная медаль в старшей возрастной группе олимпиадного турнира по математике и логике повышенного уровня.
+              </p>
+            </div>
+            <div class="olympiad-footer">
+              <span>Категория: Math 9-10</span>
+              <a href="certificates.html?q=STEMCO+Silver" style="color: var(--accent-secondary); font-weight: 600;">Диплом ➔</a>
+            </div>
+          </div>
+
+          <div class="olympiad-card">
+            <div>
+              <div class="olympiad-header">
+                <div class="olympiad-medal">🥉</div>
+                <span class="badge">2x Bronze Awards</span>
+              </div>
+              <h3 class="olympiad-title">STEMCO International Math (Winter & Fall 2024)</h3>
+              <div class="olympiad-org">StemCo International • Сингапур (Март & Ноябрь 2024)</div>
+              <p class="olympiad-desc">
+                Две бронзовые медали в зимней и осенней международных сессиях по математическому анализу и комбинаторике.
+              </p>
+            </div>
+            <div class="olympiad-footer">
+              <span>StemCo Season 2024</span>
+              <a href="certificates.html?q=STEMCO+Bronze" style="color: var(--accent-secondary); font-weight: 600;">Диплом ➔</a>
+            </div>
+          </div>
+
+          <div class="olympiad-card">
+            <div>
+              <div class="olympiad-header">
+                <div class="olympiad-medal">🇺🇸</div>
+                <span class="badge">MAA USA</span>
+              </div>
+              <h3 class="olympiad-title">American Mathematics Competitions (AMC 10)</h3>
+              <div class="olympiad-org">Mathematical Association of America (2024 & 2025)</div>
+              <p class="olympiad-desc">
+                Участие в авторитетнейшей американской математической олимпиаде старшеклассников AMC 10.
+              </p>
+            </div>
+            <div class="olympiad-footer">
+              <span>MAA Central Asia</span>
+              <a href="certificates.html?q=AMC+10" style="color: var(--accent-secondary); font-weight: 600;">Сертификат ➔</a>
+            </div>
+          </div>
+
+          <div class="olympiad-card">
+            <div>
+              <div class="olympiad-header">
+                <div class="olympiad-medal">🥉</div>
+                <span class="badge">III дәрежелі</span>
+              </div>
+              <h3 class="olympiad-title">Республиканская олимпиада «АҚБОТА»</h3>
+              <div class="olympiad-org">Министерство просвещения РК • РНПЦ «Дарын» (2024)</div>
+              <p class="olympiad-desc">
+                Диплом III степени (бронзовый призёр) в национальной интеллектуальной олимпиаде Республики Казахстан среди 9 классов.
+              </p>
+            </div>
+            <div class="olympiad-footer">
+              <span>Дарын РНПЦ</span>
+              <a href="certificates.html?q=АҚБОТА" style="color: var(--accent-secondary); font-weight: 600;">Диплом ➔</a>
+            </div>
+          </div>
+
+          <div class="olympiad-card">
+            <div>
+              <div class="olympiad-header">
+                <div class="olympiad-medal">🦘</div>
+                <span class="badge badge-emerald">6-е место в Алматы</span>
+              </div>
+              <h3 class="olympiad-title">Международный конкурс «СМАРТ КЕНГУРУ»</h3>
+              <div class="olympiad-org">Центр технологии тестирования (Февраль 2025)</div>
+              <p class="olympiad-desc">
+                37 баллов из максимальных: 5-е место по школе и 6-е место среди всех участников города Алматы.
+              </p>
+            </div>
+            <div class="olympiad-footer">
+              <span>9 класс • Алматы</span>
+              <a href="certificates.html?q=КЕНГУРУ" style="color: var(--accent-secondary); font-weight: 600;">Сертификат ➔</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates and awards -->
+    <section class="section" id="certificates"><div class="container">
+      <div class="section-header"><span class="section-tag">Подтверждения</span><h2 class="section-title">Сертификаты и награды</h2><p class="section-subtitle">Олимпиады, проектные достижения, обучение и рекомендации собраны в отдельной галерее.</p></div>
+      <div class="detail-panel"><p class="detail-lead">В каталоге 19 документов с описаниями, поиском и просмотром оригиналов.</p><a class="btn btn-primary" href="certificates.html">Открыть галерею сертификатов →</a></div>
+    </div></section>
+
+    <!-- ==========================================================================
+         LEADERSHIP & SCHOOL PRESIDENCY
+         ========================================================================== -->
+    <section class="section" id="leadership">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Лидерство & Общественная деятельность</span>
+          <h2 class="section-title">Школьное самоуправление & Инициативы</h2>
+          <p class="section-subtitle">
+            Создание поддерживающей среды для реализации проектов учеников и масштабных общешкольных событий
+          </p>
+        </div>
+
+        <div class="experience-grid">
+          
+          <div class="mission-card">
+            <div class="mission-item">
+              <div class="mission-icon">🏛️</div>
+              <div>
+                <h4 class="mission-item-title">Президент отделения Tamos Education</h4>
+                <p class="mission-item-desc">
+                  16 октября 2026 года избран президентом физико-математического отделения школы Tamos Education. Фокус программы — превратить школьное самоуправление из формального органа в практический инкубатор полезных проектов для учащихся.
+                </p>
+              </div>
+            </div>
+
+            <div class="mission-item">
+              <div class="mission-icon">💡</div>
+              <div>
+                <h4 class="mission-item-title">Бюро реализации ученических идей</h4>
+                <p class="mission-item-desc">
+                  Концепция инфраструктурного центра в школе: помощь ученикам в переходе от идеи к прототипу, расчет базовой экономики, поиск ресурсов и переговоры с администрацией и спонсорами.
+                </p>
+              </div>
+            </div>
+
+            <div class="mission-item">
+              <div class="mission-icon">🤝</div>
+              <div>
+                <h4 class="mission-item-title">Организация TAMOS Case Hackathon</h4>
+                <p class="mission-item-desc">
+                  Регламент школьного кейс-хакатона предусматривал до 70 участников (20 команд), 6 судей и три уровня спонсорских пакетов. Доступные материалы не подтверждают, что плановые показатели были достигнуты.
+                </p>
+              </div>
+            </div>
+
+            <div class="mission-item">
+              <div class="mission-icon">🌍</div>
+              <div>
+                <h4 class="mission-item-title">Молодежные и социальные программы</h4>
+                <p class="mission-item-desc">
+                  Регулярная разработка образовательных занятий по целеполаганию, тайм-менеджменту и командной этике для молодежи 12-18 лет; организация конференций и выездных интенсивов на озере Иссык-Куль.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mission-card">
+            <div class="mission-item">
+              <div class="mission-icon">🌐</div>
+              <div>
+                <h4 class="mission-item-title">Участие в венчурных форумах & саммитах</h4>
+                <p class="mission-item-desc">
+                  Активный участник флагманских технологических и инвестиционных площадок:
+                  <br>• <strong>Central Eurasian Venture Forum</strong> (Ritz-Carlton, Алматы, 5 июня 2025 г.)
+                  <br>• <strong>GITEX AI Kazakhstan</strong> — международная выставка искусственного интеллекта
+                  <br>• <strong>CAU Business Summit</strong> (визит Steve Forbes в Ташкент)
+                </p>
+              </div>
+            </div>
+
+            <div class="mission-item">
+              <div class="mission-icon">🕊️</div>
+              <div>
+                <h4 class="mission-item-title">Международные инициативы ЮНЕСКО</h4>
+                <p class="mission-item-desc">
+                  Награжден сертификатом благодарности UNESCO за вклад в социальную информационную кампанию «16 Days of Activism».
+                </p>
+              </div>
+            </div>
+
+            <div class="mission-item">
+              <div class="mission-icon">🇨🇭</div>
+              <div>
+                <h4 class="mission-item-title">Международная программа K12</h4>
+                <p class="mission-item-desc">
+                  Обучение по швейцарской программе двойного образования (Swiss Dual Education Program K12), сочетающей передовые мировые стандарты с практическим проектным треком.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="detail-actions" style="margin-top: 20px;">
+          <a class="btn btn-primary" href="https://tamos-student-government.vercel.app/" target="_blank" rel="noopener noreferrer">Открыть сайт школьного самоуправления ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section"><div class="container"><div class="section-header"><span class="section-tag">Карьера</span><h2 class="section-title">Опыт работы</h2><p class="section-subtitle">Трудоустройство и стажировки вынесены отдельно от учебных кейсов и проектной деятельности.</p></div><div class="detail-panel"><p>Открыть отдельную страницу опыта работы и стажировок.</p><a class="btn btn-secondary" href="experience.html">Опыт работы →</a></div></div></section>
+
+    <!-- ==========================================================================
+         EDUCATION & ACADEMIC LIFE
+         ========================================================================== -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Академический путь</span>
+          <h2 class="section-title">Образование & Академическая среда</h2>
+          <p class="section-subtitle">
+            Фундаментальная подготовка в физмат направлении, международные стандарты и 7-летний проектный трек в бизнес-школе
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 40px;">
+          
+          <div class="metric-card" style="text-align: left; padding: 24px;">
+            <div style="font-size: 1.5rem; margin-bottom: 8px;">🇰🇿 📐</div>
+            <h4 style="font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">Tamos Education</h4>
+            <div style="font-size: 0.85rem; color: var(--accent-secondary); margin-bottom: 10px;">Физмат школа • Алматы (2023 — н.в.)</div>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">
+              Президент физико-математического отделения. Углубленное изучение математики, физики и экономики.
+            </p>
+          </div>
+
+          <div class="metric-card" style="text-align: left; padding: 24px;">
+            <div style="font-size: 1.5rem; margin-bottom: 8px;">🇨🇭 🎓</div>
+            <h4 style="font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">Swiss Dual Education K12</h4>
+            <div style="font-size: 0.85rem; color: var(--accent-secondary); margin-bottom: 10px;">Швейцарская программа двойного диплома</div>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">
+              Международные стандарты, академический английский и подготовка к поступлению в европейские экономические вузы.
+            </p>
+          </div>
+
+          <div class="metric-card" style="text-align: left; padding: 24px;">
+            <div style="font-size: 1.5rem; margin-bottom: 8px;">🇷🇺 🏛️</div>
+            <h4 style="font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">Kinder MBA • Бизнес Созидания</h4>
+            <div style="font-size: 0.85rem; color: var(--accent-secondary); margin-bottom: 10px;">При поддержке ЭФ МГУ (2018 — 2025)</div>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">
+              7 лет практического бизнес-образования, защита 16 стартап-кейсов перед строгим экспертным жюри.
+            </p>
+          </div>
+
+          <div class="metric-card" style="text-align: left; padding: 24px;">
+            <div style="font-size: 1.5rem; margin-bottom: 8px;">🇪🇸 📚</div>
+            <h4 style="font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">Школа №1252 им. Сервантеса</h4>
+            <div style="font-size: 0.85rem; color: var(--accent-secondary); margin-bottom: 10px;">Москва, Россия (2016 — 2022)</div>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">
+              Углубленное изучение испанского языка и культуры, академические олимпиады и первые проектные инициативы.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="assets/gallery/photo1.png" alt="Защита проектов" class="gallery-img">
+            <div class="gallery-caption">Защита и презентация проектов перед жюри</div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/gallery/photo2.png" alt="Командная работа" class="gallery-img">
+            <div class="gallery-caption">Работа в проектных командах</div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/gallery/photo3.png" alt="Воркшопы и лекции" class="gallery-img">
+            <div class="gallery-caption">Образовательные воркшопы и аналитика</div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/gallery/photo4.png" alt="Кейс-соревнования" class="gallery-img">
+            <div class="gallery-caption">Кейс-чемпионаты и защита стратегий</div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/gallery/photo5.png" alt="Награждение" class="gallery-img">
+            <div class="gallery-caption">Награждения и признание жюри</div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/gallery/photo6.png" alt="Дискуссии" class="gallery-img">
+            <div class="gallery-caption">Академические дискуссии и питчи</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         MEDIA & VIDEO PRESENTATIONS
+         ========================================================================== -->
+    <section class="section" id="media">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Видео & Питчи</span>
+          <h2 class="section-title">Видеопрезентации & Защита Проектов</h2>
+          <p class="section-subtitle">
+            Записи реальных выступлений, презентаций решений перед жюри и промо-роликов разработанных сервисов
+          </p>
+        </div>
+
+        <div class="videos-grid">
+          
+          <!-- Video 1: Arlan's Delivery -->
+          <div class="media-card">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <h4 style="font-size: 1.15rem; font-weight: 700; color: var(--text-primary);">Arlan's Delivery — Видеопрезентация</h4>
+              <span class="badge badge-emerald">FoodTech Demo</span>
+            </div>
+            <div class="video-container">
+              <video src="assets/projects/arlans-delivery/video.mp4" controls class="video-player" poster="assets/projects/arlans-delivery/poster.png" preload="metadata">
+                Ваш браузер не поддерживает встроенное видео.
+              </video>
+            </div>
+            <p class="media-caption">
+              Официальный видеоролик сервиса доставки еды из школьного буфета в шкафчики: демонстрация проблемы очередей, сценарий оформления через Telegram-бот и механизм выдачи.
+            </p>
+          </div>
+
+          <!-- Video 2: Kinder MBA Defense -->
+          <div class="media-card">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <h4 style="font-size: 1.15rem; font-weight: 700; color: var(--text-primary);">Защита проекта в Kinder MBA</h4>
+              <span class="badge">Публичный питч</span>
+            </div>
+            <div class="video-container">
+              <video src="assets/projects/kinder-mba/video.mp4" controls class="video-player" poster="assets/gallery/photo1.png" preload="metadata">
+                Ваш браузер не поддерживает встроенное видео.
+              </video>
+            </div>
+            <p class="media-caption">
+              Фрагмент публичной защиты стартап-кейса перед экспертной комиссией и преподавателями Экономического факультета МГУ.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         RESUME / CV SECTION
+         ========================================================================== -->
+    <section class="section" id="cv">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Документы</span>
+          <h2 class="section-title">Резюме (Curriculum Vitae)</h2>
+          <p class="section-subtitle">
+            Актуальная версия резюме с контактами, ключевыми навыками, опытом и рекомендациями
+          </p>
+        </div>
+
+        <div class="cv-preview-card">
+          <div class="cv-preview-img-wrap" onclick="window.lightbox.open({title: 'Резюме Андрея Подгорного', issuer: 'Andrey Podgorny — CV', image: 'assets/cv/CV.png'});">
+            <img src="assets/cv/CV.png" alt="Резюме Андрея Подгорного" class="cv-preview-img">
+          </div>
+
+          <div class="cv-info">
+            <div class="badge badge-emerald" style="width: fit-content; margin-bottom: 8px;">Проектный опыт · финансы и продукты</div>
+            <h3 class="cv-info-title">Подгорный Андрей Сергеевич</h3>
+            <p class="cv-info-desc">
+              В резюме собраны образование, проектный опыт, подтверждённые достижения и навыки. Финансовые прогнозы в кейсах отделены от фактических результатов.
+            </p>
+
+            <div style="margin: 16px 0; display: flex; flex-direction: column; gap: 8px; font-size: 0.9rem; color: var(--text-secondary);">
+              <div>📍 <strong>Локация:</strong> Алматы, Казахстан / Москва</div>
+              <div>✉️ <strong>Email:</strong> <a href="mailto:podgand@icloud.com" style="color: var(--accent-secondary);">podgand@icloud.com</a></div>
+              <div>📱 <strong>Телефон:</strong> <a href="tel:+77054451880" style="color: var(--accent-secondary);">+7 (705) 445-18-80</a></div>
+            </div>
+
+            <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: 14px;">
+              <a href="assets/cv/Andrey_Podgorny_CV.pdf" download class="btn btn-primary">
+                📥 Скачать CV в формате PDF
+              </a>
+              <button class="btn btn-secondary" onclick="window.lightbox.open({title: 'Резюме Андрея Подгорного', issuer: 'Andrey Podgorny — CV', image: 'assets/cv/CV.png'});">
+                🔍 Открыть на весь экран
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT & FOOTER
+         ========================================================================== -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer-grid">
+          
+          <div class="footer-brand">
+            <h3>Андрей Подгорный</h3>
+            <p>
+              Президент физмат-отделения Tamos Education. Проектный опыт в финансах, образовании и цифровых сервисах. 
+              Интересуюсь финансовой аналитикой, стратегией и разработкой продуктов.
+            </p>
+            <div class="social-links">
+              <a href="https://t.me/podgornis" target="_blank" rel="noopener noreferrer" class="social-link" title="Telegram">✈️</a>
+              <a href="mailto:podgand@icloud.com" class="social-link" title="Email">✉️</a>
+              <a href="tel:+77054451880" class="social-link" title="Phone">📱</a>
+            </div>
+          </div>
+
+          <div class="contact-direct">
+            <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 8px;">Прямая связь</h4>
+            <div class="contact-row">
+              <span>📍</span>
+              <span>Алматы, Казахстан / Москва</span>
+            </div>
+            <div class="contact-row">
+              <span>✉️</span>
+              <a href="mailto:podgand@icloud.com">podgand@icloud.com</a>
+            </div>
+            <div class="contact-row">
+              <span>📱</span>
+              <a href="tel:+77054451880">+7 (705) 445-18-80</a>
+            </div>
+            <div class="contact-row">
+              <span>💬</span>
+              <a href="https://t.me/podgornis" target="_blank" rel="noopener noreferrer">Связаться в Telegram</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Андрей Подгорный. Создано с вниманием к деталям. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ==========================================================================
+       MODAL: FULLSCREEN LIGHTBOX
+       ========================================================================== -->
+  <div class="modal-backdrop" id="lightboxModal" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+    <div class="lightbox-container">
+      
+      <div class="lightbox-img-wrap">
+        <img src="" alt="" class="lightbox-img" id="lightboxImg"><iframe id="lightboxFrame" class="lightbox-frame" title="Документ"></iframe>
+      </div>
+
+      <div class="lightbox-details">
+        <div>
+          <h3 class="lightbox-title" id="lightboxTitle"></h3>
+          <p class="lightbox-sub" id="lightboxSub"></p>
+          <p class="lightbox-description" id="lightboxDescription"></p>
+          <div class="cert-award-pill" id="lightboxAward" style="margin-top: 6px; display: none;"></div>
+        </div>
+        <div style="display: flex; gap: 10px;">
+          <a href="#" id="lightboxDownloadBtn" download class="btn btn-sm btn-primary">
+            📥 Скачать
+          </a>
+          <button class="btn btn-sm btn-secondary" id="lightboxCloseBtn">
+            Закрыть
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="data/portfolio-data.js"></script>
+  <script src="js/data-store.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/app.js"></script>
+
+<script src="js/motion.js"></script></body>
+</html>

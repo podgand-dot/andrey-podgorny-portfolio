@@ -1,0 +1,353 @@
+[
+  {
+    "id": "cert-rec-aibekov",
+    "title": "Рекомендательное письмо: Лидерство & Arlan's Delivery",
+    "issuer": "Айбеков Елдос • CEO Comfort Asia, Преподаватель Tamos Education",
+    "category": "business",
+    "categoryLabel": "Бизнес и Консалтинг",
+    "date": "2025-02-27",
+    "year": "2025",
+    "award": "Официальная рекомендация за лидерские качества и бизнес-модель",
+    "description": "Высокая оценка вклада Андрея как креативного лидера и стратега сервиса доставки Arlan's Delivery. Отмечены навыки анализа потребностей ЦА, формирования жизнеспособной юнит-экономики и умение вдохновлять команду.",
+    "skills": [
+      "Стратегическое лидерство",
+      "Юнит-экономика",
+      "Управление проектами",
+      "Питчинг"
+    ],
+    "image": "assets/letters/recommendation_aibekov_2025.jpg",
+    "thumbnail": "assets/letters/thumbnails/recommendation_aibekov_2025.jpg"
+  },
+  {
+    "id": "cert-250525",
+    "title": "UNIGATE – Единая платформа для выбора университетов",
+    "issuer": "Бизнес Созидания • Проектный трек",
+    "category": "projects",
+    "categoryLabel": "Проектная деятельность",
+    "date": "2025-05-25",
+    "year": "2025",
+    "award": "Номинация: «Повышенная готовность к внедрению»",
+    "description": "Разработка комплексной IT-платформы для осознанного выбора специальности и университета. Полный цикл: валидация проблемы (Wordstat 5M+, 41% неопределенности), UX-исследования, карта рисков и финансово-стратегическая модель.",
+    "skills": [
+      "Product Management",
+      "UX Research",
+      "Финансовое моделирование",
+      "EdTech",
+      "Риск-менеджмент"
+    ],
+    "image": "assets/certificates/250525.png",
+    "thumbnail": "assets/certificates/thumbnails/250525.jpg"
+  },
+  {
+    "id": "cert-211224",
+    "title": "Стратегический анализ розничной сети «Детский мир»",
+    "issuer": "Бизнес Созидания • Консалтинг",
+    "category": "business",
+    "categoryLabel": "Бизнес и Консалтинг",
+    "date": "2024-12-21",
+    "year": "2024",
+    "award": "Результат защиты: 92%",
+    "description": "Комплексный стратегический аудит крупной розничной сети. Глубокий анализ внутренней (VRIO) и внешней среды (PEST, конкуренты), сегментация целевой аудитории родителей 25-45 лет и карта эмпатии.",
+    "skills": [
+      "Стратегический консалтинг",
+      "VRIO",
+      "PEST-анализ",
+      "Маркетинговые исследования"
+    ],
+    "image": "assets/certificates/211224.png",
+    "thumbnail": "assets/certificates/thumbnails/211224.jpg"
+  },
+  {
+    "id": "cert-151224",
+    "title": "Программа развития и ребрендинга сети «Детский мир»",
+    "issuer": "Бизнес Созидания • Кейс-чемпионат",
+    "category": "business",
+    "categoryLabel": "Бизнес и Консалтинг",
+    "date": "2024-12-15",
+    "year": "2024",
+    "award": "Номинация: «Лучшие стратегические предложения»",
+    "description": "Разработка комплекса предложений: клиентоориентированное обучение персонала, модернизация флагманских магазинов, онлайн-ребрендинг и концепция инфлюенс-кампании.",
+    "skills": [
+      "Стратегическое планирование",
+      "Ребрендинг",
+      "Customer Experience",
+      "Презентация решений"
+    ],
+    "image": "assets/certificates/151224.png",
+    "thumbnail": "assets/certificates/thumbnails/151224.jpg"
+  },
+  {
+    "id": "cert-190524",
+    "title": "Стратегия выхода «ВкусВилл» на сербский рынок",
+    "issuer": "Бизнес Созидания • Международный бизнес",
+    "category": "business",
+    "categoryLabel": "Бизнес и Консалтинг",
+    "date": "2024-05-19",
+    "year": "2024",
+    "award": "Номинация: «Лучший анализ внутреннего и внешнего рынка»",
+    "description": "Разработка стратегии вывода линейки продукции свежей зелени на рынок Сербии. Анализ макроэкономики, ценовое позиционирование для преодоления барьера импорта, пяти сил Портера и маркетинговый план.",
+    "skills": [
+      "Market Entry Strategy",
+      "SWOT & PEST",
+      "5 сил Портера",
+      "Международный маркетинг"
+    ],
+    "image": "assets/certificates/190524.png",
+    "thumbnail": "assets/certificates/thumbnails/190524.jpg"
+  },
+  {
+    "id": "cert-atb-2023",
+    "title": "Рекламная кампания «Аграрные технологии будущего» (АТБ)",
+    "issuer": "Бизнес Созидания • Президентская Академия",
+    "category": "projects",
+    "categoryLabel": "Проектная деятельность",
+    "date": "2023-12-24",
+    "year": "2023",
+    "award": "Выдающееся выступление: 115/120 баллов (96%)",
+    "description": "Успешная презентация проекта перед экспертным жюри по итогам модуля «Основы рекламы». Высшие баллы за ответы на вопросы, концепцию кампании и креативность рекомендаций.",
+    "skills": [
+      "Рекламные стратегии",
+      "Креативный концепт",
+      "Публичная защита",
+      "Маркетинг"
+    ],
+    "image": "assets/certificates/atb_advertising_2023.jpg",
+    "thumbnail": "assets/certificates/thumbnails/atb_advertising_2023.jpg"
+  },
+  {
+    "id": "cert-raiffeisen-2022",
+    "title": "Разработка детского приложения для Райффайзенбанка",
+    "issuer": "Kinder MBA • Экономический факультет МГУ",
+    "category": "projects",
+    "categoryLabel": "Проектная деятельность",
+    "date": "2022-05-22",
+    "year": "2022",
+    "award": "Результат защиты: 81/90 баллов (90%)",
+    "description": "Проектирование финтех-приложения для детей и подростков: геймификация накоплений, интеграция с родительским контролем, проверка пользовательских сценариев и финмодель.",
+    "skills": [
+      "FinTech",
+      "Product Design",
+      "UX/UI",
+      "Детский банкинг"
+    ],
+    "image": "assets/certificates/raiffeisen_app_2022.jpg",
+    "thumbnail": "assets/certificates/thumbnails/raiffeisen_app_2022.jpg"
+  },
+  {
+    "id": "cert-sap-2021",
+    "title": "Мобильное приложение для «Умного стула» (в коллаборации с SAP)",
+    "issuer": "Kinder MBA & SAP • ЭФ МГУ им. М.В. Ломоносова",
+    "category": "projects",
+    "categoryLabel": "Проектная деятельность",
+    "date": "2021-05-23",
+    "year": "2021",
+    "award": "Номинация: «Самая актуальная проблема»",
+    "description": "IoT-решение для контроля осанки офисных работников и школьников: датчики давления, интеграция со смартфоном и аналитика времени активности.",
+    "skills": [
+      "IoT & Hardware",
+      "Mobile App Concept",
+      "SAP Ecosystem",
+      "Продуктовый анализ"
+    ],
+    "image": "assets/certificates/sap_smart_chair_2021.jpg",
+    "thumbnail": "assets/certificates/thumbnails/sap_smart_chair_2021.jpg"
+  },
+  {
+    "id": "cert-stemco-gold-2024",
+    "title": "STEMCO International Math Olympiad (Spring 2024)",
+    "issuer": "StemCo International Olympiad • Сингапур",
+    "category": "olympiads",
+    "categoryLabel": "Олимпиады",
+    "date": "2024-06-15",
+    "year": "2024",
+    "award": "🥇 Золотая медаль (Gold Award)",
+    "description": "Победа в престижном международном соревновании по математике StemCo среди учащихся со всего мира. Решение нестандартных олимпиадных задач повышенной сложности.",
+    "skills": [
+      "Высшая математика",
+      "Логика",
+      "Аналитическое мышление",
+      "Алгебра & Геометрия"
+    ],
+    "image": "assets/certificates/stemco_math_gold_2024.jpg",
+    "thumbnail": "assets/certificates/thumbnails/stemco_math_gold_2024.jpg"
+  },
+  {
+    "id": "cert-stemco-silver-2025",
+    "title": "STEMCO International Math Olympiad (Math 9-10)",
+    "issuer": "StemCo International Olympiad • Сингапур",
+    "category": "olympiads",
+    "categoryLabel": "Олимпиады",
+    "date": "2025-02-18",
+    "year": "2025",
+    "award": "🥈 Серебряная медаль (Silver Award)",
+    "description": "Серебряная награда в старшей возрастной категории 9-10 классов международного турнира StemCo Math.",
+    "skills": [
+      "Олимпиадная математика",
+      "Комбинаторика",
+      "Теория чисел"
+    ],
+    "image": "assets/certificates/stemco_math_silver_2025.jpg",
+    "thumbnail": "assets/certificates/thumbnails/stemco_math_silver_2025.jpg"
+  },
+  {
+    "id": "cert-stemco-bronze-2024w",
+    "title": "STEMCO International Math Olympiad (Winter 2024)",
+    "issuer": "StemCo International Olympiad • Сингапур",
+    "category": "olympiads",
+    "categoryLabel": "Олимпиады",
+    "date": "2024-03-10",
+    "year": "2024",
+    "award": "🥉 Бронзовая медаль (Bronze Award)",
+    "description": "Бронзовый призёр зимней сессии математического турнира StemCo 7-8 классов.",
+    "skills": [
+      "Математический анализ",
+      "Олимпиадные задачи"
+    ],
+    "image": "assets/certificates/stemco_math_bronze_2024.jpg",
+    "thumbnail": "assets/certificates/thumbnails/stemco_math_bronze_2024.jpg"
+  },
+  {
+    "id": "cert-stemco-bronze-2024f",
+    "title": "STEMCO International Math Olympiad (Fall 2024)",
+    "issuer": "StemCo International Olympiad • Сингапур",
+    "category": "olympiads",
+    "categoryLabel": "Олимпиады",
+    "date": "2024-11-20",
+    "year": "2024",
+    "award": "🥉 Бронзовая медаль (Bronze Award)",
+    "description": "Бронзовая медаль в категории Math 9-10 осеннего кубка StemCo International.",
+    "skills": [
+      "Математическое моделирование",
+      "Логика"
+    ],
+    "image": "assets/certificates/stemco_math_bronze_fall2024.jpg",
+    "thumbnail": "assets/certificates/thumbnails/stemco_math_bronze_fall2024.jpg"
+  },
+  {
+    "id": "cert-maa-amc10-2025",
+    "title": "MAA American Mathematics Competitions (AMC 10)",
+    "issuer": "Mathematical Association of America (MAA) • США",
+    "category": "olympiads",
+    "categoryLabel": "Олимпиады",
+    "date": "2025-01-25",
+    "year": "2025",
+    "award": "Официальный сертификат участника AMC 10",
+    "description": "Участие в авторитетнейшей американской математической олимпиаде старшеклассников, организуемой Математической Ассоциацией Америки.",
+    "skills": [
+      "American Mathematics",
+      "Problem Solving",
+      "Критическое мышление"
+    ],
+    "image": "assets/certificates/maa_amc10_2025.jpg",
+    "thumbnail": "assets/certificates/thumbnails/maa_amc10_2025.jpg"
+  },
+  {
+    "id": "cert-daryn-akbota-2024",
+    "title": "Республиканская олимпиада «АҚБОТА»",
+    "issuer": "Министерство просвещения РК • РНПЦ «Дарын»",
+    "category": "olympiads",
+    "categoryLabel": "Олимпиады",
+    "date": "2024-12-10",
+    "year": "2024",
+    "award": "🥉 Диплом III дәрежелі (Призёр / Бронза)",
+    "description": "Призовое третье место в национальной интеллектуальной олимпиаде Республики Казахстан среди общеобразовательных школ.",
+    "skills": [
+      "Интеллектуальные конкурсы",
+      "Логика",
+      "Эрудиция"
+    ],
+    "image": "assets/certificates/daryn_akbota_bronze_2024.jpg",
+    "thumbnail": "assets/certificates/thumbnails/daryn_akbota_bronze_2024.jpg"
+  },
+  {
+    "id": "cert-smart-kangaroo-2025",
+    "title": "Международный конкурс «СМАРТ КЕНГУРУ»",
+    "issuer": "Центр технологии тестирования «Кенгуру плюс»",
+    "category": "olympiads",
+    "categoryLabel": "Олимпиады",
+    "date": "2025-02-15",
+    "year": "2025",
+    "award": "6-е место в городе Алматы (37 баллов)",
+    "description": "Высокий результат в международном математическом конкурсе: 5-е место в школе и 6-е место среди всех участников города Алматы.",
+    "skills": [
+      "Быстрый счет",
+      "Геометрическая интуиция",
+      "Олимпиадные задачи"
+    ],
+    "image": "assets/certificates/smart_kangaroo_6th_2025.jpg",
+    "thumbnail": "assets/certificates/thumbnails/smart_kangaroo_6th_2025.jpg"
+  },
+  {
+    "id": "cert-zhas-kasipker-2025",
+    "title": "Олимпиада по предпринимательству «Жас Кәсіпкер»",
+    "issuer": "Aibekov Group & Tamos Education",
+    "category": "business",
+    "categoryLabel": "Бизнес и Консалтинг",
+    "date": "2025-02-27",
+    "year": "2025",
+    "award": "Certificate of Achievement за проект Arlan's Delivery",
+    "description": "Защита стартап-модели школьной доставки еды Arlan's Delivery. Валидация юнит-экономики, опрос 80+ пользователей и разработка архитектуры заказа через локеры.",
+    "skills": [
+      "Предпринимательство",
+      "Стартап",
+      "Питчинг",
+      "Бизнес-план"
+    ],
+    "image": "assets/certificates/zhas_kasipker_2025.jpg",
+    "thumbnail": "assets/certificates/thumbnails/zhas_kasipker_2025.jpg"
+  },
+  {
+    "id": "cert-unesco-2025",
+    "title": "UNESCO 16 Days of Activism Campaign",
+    "issuer": "UNESCO & International Education Initiatives",
+    "category": "education",
+    "categoryLabel": "Образование и Курсы",
+    "date": "2025-12-03",
+    "year": "2025",
+    "award": "Certificate of Appreciation",
+    "description": "Благодарность ЮНЕСКО за активное участие в международной социальной кампании и развитие молодежных инициатив.",
+    "skills": [
+      "Социальная ответственность",
+      "Лидерство",
+      "UNESCO Initiatives"
+    ],
+    "image": "assets/certificates/unesco_activism_2024.jpg",
+    "thumbnail": "assets/certificates/thumbnails/unesco_activism_2024.jpg"
+  },
+  {
+    "id": "cert-cis-wasc-2024",
+    "title": "TAMOS Education International Program (CIS & WASC Accredited)",
+    "issuer": "Tamos Education International • CIS & WASC",
+    "category": "education",
+    "categoryLabel": "Образование и Курсы",
+    "date": "2024-06-20",
+    "year": "2024",
+    "award": "Certificate of Completion",
+    "description": "Успешное завершение академической программы международного образца, аккредитованной Western Association of Schools and Colleges (WASC) и CIS.",
+    "skills": [
+      "Международные стандарты",
+      "Academic English",
+      "Advanced Math"
+    ],
+    "image": "assets/certificates/cis_wasc_tamos_2024.jpg",
+    "thumbnail": "assets/certificates/thumbnails/cis_wasc_tamos_2024.jpg"
+  },
+  {
+    "id": "cert-netology-2024",
+    "title": "Профессиональное обучение в Нетологии",
+    "issuer": "Нетология (Netology)",
+    "category": "education",
+    "categoryLabel": "Образование и Курсы",
+    "date": "2024-08-30",
+    "year": "2024",
+    "award": "Официальное свидетельство об обучении",
+    "description": "Сертификация по практическим цифровым дисциплинам и современным аналитическим методологиям.",
+    "skills": [
+      "Цифровая аналитика",
+      "Продуктовые инструменты",
+      "Самообразование"
+    ],
+    "image": "assets/certificates/netology_education_2024.jpg",
+    "thumbnail": "assets/certificates/thumbnails/netology_education_2024.jpg"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "name": "andrew-podgorny-portfolio",
+  "version": "2.0.0",
+  "description": "Портфолио Андрея Подгорного — предпринимательские и учебные проекты, достижения и опыт",
+  "type": "module",
+  "main": "scripts/server.js",
+  "scripts": {
+    "start": "node scripts/server.js",
+    "dev": "node scripts/server.js",
+    "build": "node scripts/sync-data.js"
+  },
+  "keywords": [
+    "portfolio",
+    "edtech",
+    "consulting",
+    "certificates",
+    "projects"
+  ],
+  "author": "Andrey Podgorny",
+  "license": "MIT"
+}
