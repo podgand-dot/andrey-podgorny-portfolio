@@ -105,7 +105,7 @@ window.PORTFOLIO_DATA = {
         ],
         [
           "Сертификат Жас Кәсіпкер",
-          "assets/certificates/zhas_kasipker_2025.jpg"
+          "assets/certificates/zhas_kasipker_2025.webp"
         ],
         [
           "Презентация проекта Arlan’s Delivery",
@@ -133,7 +133,7 @@ window.PORTFOLIO_DATA = {
       "sources": [
         [
           "Сертификат проекта",
-          "assets/certificates/250525.png"
+          "assets/certificates/250525.webp"
         ],
         [
           "Презентация проекта UNIGATE",
@@ -184,11 +184,11 @@ window.PORTFOLIO_DATA = {
       "sources": [
         [
           "Сертификат стратегического анализа",
-          "assets/certificates/211224.png"
+          "assets/certificates/211224.webp"
         ],
         [
           "Сертификат за стратегические предложения",
-          "assets/certificates/151224.png"
+          "assets/certificates/151224.webp"
         ],
         [
           "Презентация кейса «Детский мир» — Google Slides",
@@ -216,7 +216,7 @@ window.PORTFOLIO_DATA = {
       "sources": [
         [
           "Сертификат проекта",
-          "assets/certificates/190524.png"
+          "assets/certificates/190524.webp"
         ],
         [
           "Презентация выхода «ВкусВилл» на рынок Сербии — Google Slides",
@@ -296,7 +296,7 @@ window.PORTFOLIO_DATA = {
       "sources": [
         [
           "Сертификат АТБ",
-          "assets/certificates/atb_advertising_2023.jpg"
+          "assets/certificates/atb_advertising_2023.webp"
         ],
         [
           "Презентация рекламной кампании АТБ — Google Slides",
@@ -324,7 +324,7 @@ window.PORTFOLIO_DATA = {
       "sources": [
         [
           "Сертификат проекта",
-          "assets/certificates/raiffeisen_app_2022.jpg"
+          "assets/certificates/raiffeisen_app_2022.webp"
         ],
         [
           "Презентация детского приложения Райффайзенбанка — Google Slides",
@@ -352,7 +352,7 @@ window.PORTFOLIO_DATA = {
       "sources": [
         [
           "Сертификат проекта",
-          "assets/certificates/sap_smart_chair_2021.jpg"
+          "assets/certificates/sap_smart_chair_2021.webp"
         ],
         [
           "Презентация iChair — Google Slides",
@@ -660,8 +660,8 @@ window.PORTFOLIO_DATA = {
         "Управление проектами",
         "Питчинг"
       ],
-      "image": "assets/letters/recommendation_aibekov_2025.jpg",
-      "thumbnail": "assets/letters/thumbnails/recommendation_aibekov_2025.jpg"
+      "image": "assets/letters/recommendation_aibekov_2025.webp",
+      "thumbnail": "assets/letters/thumbnails/recommendation_aibekov_2025.webp"
     },
     {
       "id": "cert-250525",
@@ -680,8 +680,8 @@ window.PORTFOLIO_DATA = {
         "EdTech",
         "Риск-менеджмент"
       ],
-      "image": "assets/certificates/250525.png",
-      "thumbnail": "assets/certificates/thumbnails/250525.jpg"
+      "image": "assets/certificates/250525.webp",
+      "thumbnail": "assets/certificates/thumbnails/250525.webp"
     },
     {
       "id": "cert-211224",
@@ -699,8 +699,8 @@ window.PORTFOLIO_DATA = {
         "PEST-анализ",
         "Маркетинговые исследования"
       ],
-      "image": "assets/certificates/211224.png",
-      "thumbnail": "assets/certificates/thumbnails/211224.jpg"
+      "image": "assets/certificates/211224.webp",
+      "thumbnail": "assets/certificates/thumbnails/211224.webp"
     },
     {
       "id": "cert-151224",
@@ -718,8 +718,8 @@ window.PORTFOLIO_DATA = {
         "Customer Experience",
         "Презентация решений"
       ],
-      "image": "assets/certificates/151224.png",
-      "thumbnail": "assets/certificates/thumbnails/151224.jpg"
+      "image": "assets/certificates/151224.webp",
+      "thumbnail": "assets/certificates/thumbnails/151224.webp"
     },
     {
       "id": "cert-190524",
@@ -737,8 +737,8 @@ window.PORTFOLIO_DATA = {
         "5 сил Портера",
         "Международный маркетинг"
       ],
-      "image": "assets/certificates/190524.png",
-      "thumbnail": "assets/certificates/thumbnails/190524.jpg"
+      "image": "assets/certificates/190524.webp",
+      "thumbnail": "assets/certificates/thumbnails/190524.webp"
     },
     {
       "id": "cert-atb-2023",
@@ -756,8 +756,8 @@ window.PORTFOLIO_DATA = {
         "Публичная защита",
         "Маркетинг"
       ],
-      "image": "assets/certificates/atb_advertising_2023.jpg",
-      "thumbnail": "assets/certificates/thumbnails/atb_advertising_2023.jpg"
+      "image": "assets/certificates/atb_advertising_2023.webp",
+      "thumbnail": "assets/certificates/thumbnails/atb_advertising_2023.webp"
     },
     {
       "id": "cert-raiffeisen-2022",
@@ -775,8 +775,8 @@ window.PORTFOLIO_DATA = {
         "UX/UI",
         "Детский банкинг"
       ],
-      "image": "assets/certificates/raiffeisen_app_2022.jpg",
-      "thumbnail": "assets/certificates/thumbnails/raiffeisen_app_2022.jpg"
+      "image": "assets/certificates/raiffeisen_app_2022.webp",
+      "thumbnail": "assets/certificates/thumbnails/raiffeisen_app_2022.webp"
     },
     {
       "id": "cert-sap-2021",
@@ -794,8 +794,8 @@ window.PORTFOLIO_DATA = {
         "SAP Ecosystem",
         "Продуктовый анализ"
       ],
-      "image": "assets/certificates/sap_smart_chair_2021.jpg",
-      "thumbnail": "assets/certificates/thumbnails/sap_smart_chair_2021.jpg"
+      "image": "assets/certificates/sap_smart_chair_2021.webp",
+      "thumbnail": "assets/certificates/thumbnails/sap_smart_chair_2021.webp"
     },
     {
       "id": "cert-stemco-gold-2024",
@@ -813,8 +813,8 @@ window.PORTFOLIO_DATA = {
         "Аналитическое мышление",
         "Алгебра & Геометрия"
       ],
-      "image": "assets/certificates/stemco_math_gold_2024.jpg",
-      "thumbnail": "assets/certificates/thumbnails/stemco_math_gold_2024.jpg"
+      "image": "assets/certificates/stemco_math_gold_2024.webp",
+      "thumbnail": "assets/certificates/thumbnails/stemco_math_gold_2024.webp"
     },
     {
       "id": "cert-stemco-silver-2025",
@@ -831,8 +831,8 @@ window.PORTFOLIO_DATA = {
         "Комбинаторика",
         "Теория чисел"
       ],
-      "image": "assets/certificates/stemco_math_silver_2025.jpg",
-      "thumbnail": "assets/certificates/thumbnails/stemco_math_silver_2025.jpg"
+      "image": "assets/certificates/stemco_math_silver_2025.webp",
+      "thumbnail": "assets/certificates/thumbnails/stemco_math_silver_2025.webp"
     },
     {
       "id": "cert-stemco-bronze-2024w",
@@ -848,8 +848,8 @@ window.PORTFOLIO_DATA = {
         "Математический анализ",
         "Олимпиадные задачи"
       ],
-      "image": "assets/certificates/stemco_math_bronze_2024.jpg",
-      "thumbnail": "assets/certificates/thumbnails/stemco_math_bronze_2024.jpg"
+      "image": "assets/certificates/stemco_math_bronze_2024.webp",
+      "thumbnail": "assets/certificates/thumbnails/stemco_math_bronze_2024.webp"
     },
     {
       "id": "cert-stemco-bronze-2024f",
@@ -865,8 +865,8 @@ window.PORTFOLIO_DATA = {
         "Математическое моделирование",
         "Логика"
       ],
-      "image": "assets/certificates/stemco_math_bronze_fall2024.jpg",
-      "thumbnail": "assets/certificates/thumbnails/stemco_math_bronze_fall2024.jpg"
+      "image": "assets/certificates/stemco_math_bronze_fall2024.webp",
+      "thumbnail": "assets/certificates/thumbnails/stemco_math_bronze_fall2024.webp"
     },
     {
       "id": "cert-maa-amc10-2025",
@@ -883,8 +883,8 @@ window.PORTFOLIO_DATA = {
         "Problem Solving",
         "Критическое мышление"
       ],
-      "image": "assets/certificates/maa_amc10_2025.jpg",
-      "thumbnail": "assets/certificates/thumbnails/maa_amc10_2025.jpg"
+      "image": "assets/certificates/maa_amc10_2025.webp",
+      "thumbnail": "assets/certificates/thumbnails/maa_amc10_2025.webp"
     },
     {
       "id": "cert-daryn-akbota-2024",
@@ -901,8 +901,8 @@ window.PORTFOLIO_DATA = {
         "Логика",
         "Эрудиция"
       ],
-      "image": "assets/certificates/daryn_akbota_bronze_2024.jpg",
-      "thumbnail": "assets/certificates/thumbnails/daryn_akbota_bronze_2024.jpg"
+      "image": "assets/certificates/daryn_akbota_bronze_2024.webp",
+      "thumbnail": "assets/certificates/thumbnails/daryn_akbota_bronze_2024.webp"
     },
     {
       "id": "cert-smart-kangaroo-2025",
@@ -919,8 +919,8 @@ window.PORTFOLIO_DATA = {
         "Геометрическая интуиция",
         "Олимпиадные задачи"
       ],
-      "image": "assets/certificates/smart_kangaroo_6th_2025.jpg",
-      "thumbnail": "assets/certificates/thumbnails/smart_kangaroo_6th_2025.jpg"
+      "image": "assets/certificates/smart_kangaroo_6th_2025.webp",
+      "thumbnail": "assets/certificates/thumbnails/smart_kangaroo_6th_2025.webp"
     },
     {
       "id": "cert-zhas-kasipker-2025",
@@ -938,8 +938,8 @@ window.PORTFOLIO_DATA = {
         "Питчинг",
         "Бизнес-план"
       ],
-      "image": "assets/certificates/zhas_kasipker_2025.jpg",
-      "thumbnail": "assets/certificates/thumbnails/zhas_kasipker_2025.jpg"
+      "image": "assets/certificates/zhas_kasipker_2025.webp",
+      "thumbnail": "assets/certificates/thumbnails/zhas_kasipker_2025.webp"
     },
     {
       "id": "cert-unesco-2025",
@@ -956,8 +956,8 @@ window.PORTFOLIO_DATA = {
         "Лидерство",
         "UNESCO Initiatives"
       ],
-      "image": "assets/certificates/unesco_activism_2024.jpg",
-      "thumbnail": "assets/certificates/thumbnails/unesco_activism_2024.jpg"
+      "image": "assets/certificates/unesco_activism_2024.webp",
+      "thumbnail": "assets/certificates/thumbnails/unesco_activism_2024.webp"
     },
     {
       "id": "cert-cis-wasc-2024",
@@ -974,8 +974,8 @@ window.PORTFOLIO_DATA = {
         "Academic English",
         "Advanced Math"
       ],
-      "image": "assets/certificates/cis_wasc_tamos_2024.jpg",
-      "thumbnail": "assets/certificates/thumbnails/cis_wasc_tamos_2024.jpg"
+      "image": "assets/certificates/cis_wasc_tamos_2024.webp",
+      "thumbnail": "assets/certificates/thumbnails/cis_wasc_tamos_2024.webp"
     },
     {
       "id": "cert-netology-2024",
@@ -992,8 +992,8 @@ window.PORTFOLIO_DATA = {
         "Продуктовые инструменты",
         "Самообразование"
       ],
-      "image": "assets/certificates/netology_education_2024.jpg",
-      "thumbnail": "assets/certificates/thumbnails/netology_education_2024.jpg"
+      "image": "assets/certificates/netology_education_2024.webp",
+      "thumbnail": "assets/certificates/thumbnails/netology_education_2024.webp"
     }
   ],
   "experience": []

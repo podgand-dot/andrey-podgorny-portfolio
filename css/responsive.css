@@ -136,17 +136,4 @@
   .hero-actions .btn {
     width: 100%;
   }
-
-  .toolbar-top {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .toolbar-actions {
-    justify-content: stretch;
-  }
-
-  .toolbar-actions .btn {
-    flex: 1;
-  }
 }

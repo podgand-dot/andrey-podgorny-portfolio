@@ -1,0 +1,19 @@
+# Local-only content manager and tooling: never deployed.
+admin.html
+js/admin.js
+scripts/
+package.json
+package-lock.json
+node_modules/
+
+# Repository and editor files
+README.md
+.gitattributes
+.gitignore
+.claude/
+.vscode/
+.DS_Store
+legacy_backup/
+
+# Source scans and OCR output that the public pages do not load
+assets/certificates/extracted_ocr.json

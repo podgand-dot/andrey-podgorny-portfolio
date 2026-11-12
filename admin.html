@@ -1,1 +1,75 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Управление сертификатами • локально</title><script src="js/theme.js"></script><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/pages.css"><link rel="stylesheet" href="css/redesign.css"></head><body><main class="container detail-page admin-page"><a class="back-link" href="/">← На сайт</a><div class="detail-kicker">Локальная панель</div><h1>Сертификаты</h1><p class="detail-lead">Панель доступна только при запуске сайта на этом компьютере через <code>npm start</code>. После сохранения файлы и описания обновляются в проекте.</p><form id="certForm" class="detail-panel"><input type="hidden" id="certId"><label>Файл сертификата<input id="certFile" type="file" accept="image/png,image/jpeg,image/webp,application/pdf"></label><div class="form-grid"><label>Название *<input id="certTitle" required maxlength="180"></label><label>Организация *<input id="certIssuer" required maxlength="180"></label><label>Категория<select id="certCategory"><option value="business">Бизнес и консалтинг</option><option value="projects">Проекты</option><option value="olympiads">Олимпиады</option><option value="education">Образование и курсы</option></select></label><label>Дата или год<input id="certDate" placeholder="2026 или 2026-11-07"></label><label>Результат / награда<input id="certAward" maxlength="180"></label><label>Навыки через запятую<input id="certSkills"></label><label class="full-width">Описание<textarea id="certDescription" rows="4" maxlength="4000" required></textarea></label></div><div class="detail-actions"><button class="btn btn-primary" id="saveCert" type="submit">Сохранить сертификат</button><button class="btn btn-secondary" id="cancelEdit" type="button" hidden>Отменить редактирование</button></div><p id="adminMessage" role="status"></p></form><h2>Добавленные сертификаты</h2><div id="adminCertList"></div></main><script src="js/admin.js"></script><script src="js/motion.js"></script></body></html>
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Управление сертификатами • локально</title>
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script src="js/theme.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/redesign.css">
+  <link rel="stylesheet" href="css/secondary.css">
+  <script src="js/page-utils.js" defer></script>
+  <script src="js/admin.js" defer></script>
+  <script src="js/motion.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <main class="container detail-page admin-page" id="main" tabindex="-1">
+    <a class="back-link" href="/">← На сайт</a>
+    <div class="detail-kicker">Локальная панель</div>
+    <h1>Сертификаты</h1>
+    <p class="detail-lead">Панель доступна только при запуске сайта на этом компьютере через <code>npm start</code>. После сохранения файлы и описания обновляются в проекте.</p>
+
+    <form id="certForm" class="detail-panel">
+      <input type="hidden" id="certId">
+
+      <label for="certFile">Файл сертификата
+        <input id="certFile" name="file" type="file" accept="image/png,image/jpeg,image/webp,application/pdf">
+      </label>
+
+      <div class="form-grid">
+        <label for="certTitle">Название *
+          <input id="certTitle" name="title" required aria-required="true" maxlength="180" autocomplete="off">
+        </label>
+        <label for="certIssuer">Организация *
+          <input id="certIssuer" name="issuer" required aria-required="true" maxlength="180" autocomplete="off">
+        </label>
+        <label for="certCategory">Категория
+          <select id="certCategory" name="category">
+            <option value="business">Бизнес и консалтинг</option>
+            <option value="projects">Проекты</option>
+            <option value="olympiads">Олимпиады</option>
+            <option value="education">Образование и курсы</option>
+          </select>
+        </label>
+        <label for="certDate">Дата или год
+          <input id="certDate" name="date" placeholder="2026 или 2026-11-07" autocomplete="off">
+        </label>
+        <label for="certAward">Результат / награда
+          <input id="certAward" name="award" maxlength="180" autocomplete="off">
+        </label>
+        <label for="certSkills">Навыки через запятую
+          <input id="certSkills" name="skills" autocomplete="off">
+        </label>
+        <label class="full-width" for="certDescription">Описание
+          <textarea id="certDescription" name="description" rows="4" maxlength="4000" required aria-required="true"></textarea>
+        </label>
+      </div>
+
+      <div class="detail-actions">
+        <button class="btn btn-primary" id="saveCert" type="submit">Сохранить сертификат</button>
+        <button class="btn btn-secondary" id="cancelEdit" type="button" hidden>Отменить редактирование</button>
+      </div>
+      <p id="adminMessage" class="admin-message" role="status" aria-live="polite"></p>
+    </form>
+
+    <h2>Добавленные сертификаты</h2>
+    <div id="adminCertList" class="admin-cert-list"></div>
+  </main>
+</body>
+</html>
