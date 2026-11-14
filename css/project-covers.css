@@ -1,105 +1,126 @@
-/* Custom project covers: category artwork and names, never presentation title slides. */
-.projects-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items: stretch;
-  gap: 19px;
-}
-.project-card {
-  overflow: hidden;
-  padding: 0;
-  border-radius: 20px;
-  background: var(--bg-secondary);
-}
+/* ==========================================================================
+   PROJECT COVERS (index.html catalogue)
+   Category gradient from the shared --cover-<category>-a/-b tokens (redesign.css),
+   a bottom scrim for title contrast and one of three line patterns per card.
+   ========================================================================== */
+.project-card { --cv-a: var(--cover-fintech-a); --cv-b: var(--cover-fintech-b); }
+.project-card[data-category="fintech"]    { --cv-a: var(--cover-fintech-a);    --cv-b: var(--cover-fintech-b); }
+.project-card[data-category="consulting"] { --cv-a: var(--cover-consulting-a); --cv-b: var(--cover-consulting-b); }
+.project-card[data-category="edtech"]     { --cv-a: var(--cover-edtech-a);     --cv-b: var(--cover-edtech-b); }
+.project-card[data-category="education"]  { --cv-a: var(--cover-education-a);  --cv-b: var(--cover-education-b); }
+.project-card[data-category="business"]   { --cv-a: var(--cover-business-a);   --cv-b: var(--cover-business-b); }
+.project-card[data-category="marketing"]  { --cv-a: var(--cover-marketing-a);  --cv-b: var(--cover-marketing-b); }
+.project-card[data-category="product"]    { --cv-a: var(--cover-product-a);    --cv-b: var(--cover-product-b); }
+.project-card[data-category="service"]    { --cv-a: var(--cover-service-a);    --cv-b: var(--cover-service-b); }
+.project-card[data-category="leadership"] { --cv-a: var(--cover-leadership-a); --cv-b: var(--cover-leadership-b); }
+
 .project-card-art {
   position: relative;
-  display: block;
-  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  height: 144px;
   overflow: hidden;
-  padding: 25px 29px;
+  padding: 18px 22px 18px;
   isolation: isolate;
   color: #fff;
-  background-color: #356f71;
+  background: var(--cover-scrim), linear-gradient(135deg, var(--cv-a) 0%, var(--cv-b) 100%);
 }
+/* Pattern layer */
 .project-card-art::before,
 .project-card-art::after {
   content: "";
   position: absolute;
   z-index: -1;
-  top: -58%;
-  right: -14%;
-  width: 330px;
-  aspect-ratio: 1;
-  border: 1px solid rgba(255,255,255,.18);
-  border-radius: 50%;
   pointer-events: none;
 }
-.project-card-art::before {
-  box-shadow: 0 0 0 36px rgba(255,255,255,.035), 0 0 0 72px rgba(255,255,255,.027);
-}
+/* Soft light in the top-right corner, shared by all variants */
 .project-card-art::after {
-  top: -71%;
-  right: -27%;
-  width: 390px;
-  border-color: rgba(255,255,255,.11);
+  top: -70px;
+  right: -50px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,.2), rgba(255,255,255,0) 66%);
 }
+/* Variant 0: concentric arcs */
+.art-variant-0::before {
+  right: -96px;
+  bottom: -150px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: repeating-radial-gradient(circle, rgba(255,255,255,0) 0 19px, rgba(255,255,255,.2) 19px 20px);
+  -webkit-mask-image: radial-gradient(circle, #000 0 52%, transparent 71%);
+  mask-image: radial-gradient(circle, #000 0 52%, transparent 71%);
+}
+/* Variant 1: blueprint grid */
+.art-variant-1::before {
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.14) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.14) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: -1px -1px;
+  -webkit-mask-image: linear-gradient(110deg, transparent 30%, #000 92%);
+  mask-image: linear-gradient(110deg, transparent 30%, #000 92%);
+}
+/* Variant 2: dot matrix */
+.art-variant-2::before {
+  inset: 0;
+  background-image: radial-gradient(rgba(255,255,255,.34) 1.1px, transparent 1.7px);
+  background-size: 14px 14px;
+  background-position: 3px 3px;
+  -webkit-mask-image: radial-gradient(120% 140% at 100% 0%, #000 8%, transparent 62%);
+  mask-image: radial-gradient(120% 140% at 100% 0%, #000 8%, transparent 62%);
+}
+
 .project-art-meta {
   position: relative;
-  z-index: 1;
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 12px;
 }
 .project-art-index {
-  color: #ffb36d;
-  font-size: .86rem;
-  font-weight: 760;
-  letter-spacing: .11em;
+  display: inline-flex;
+  align-items: center;
+  min-width: 34px;
+  justify-content: center;
+  padding: 2px 9px;
+  border: 1px solid rgba(255,255,255,.28);
+  border-radius: var(--radius-pill);
+  background: rgba(255,255,255,.14);
+  color: #fff;
+  font-size: .75rem;
+  font-weight: 750;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: .06em;
+  line-height: 1.6;
 }
 .project-art-label {
-  color: rgba(255,255,255,.77);
-  font-size: .77rem;
-  font-weight: 720;
+  color: #fff;
+  font-size: .75rem;
+  font-weight: 700;
   letter-spacing: .14em;
+  opacity: .94;
 }
 .project-art-title {
-  position: absolute;
-  z-index: 1;
-  right: 26px;
-  bottom: 24px;
-  left: 26px;
+  position: relative;
   display: -webkit-box;
+  max-width: 92%;
   overflow: hidden;
   color: #fff;
-  font-size: clamp(1.25rem, 2.15vw, 1.75rem);
-  font-weight: 560;
+  font-size: 1.32rem;
+  font-weight: 700;
   line-height: 1.16;
-  letter-spacing: -.035em;
-  text-align: center;
-  text-overflow: ellipsis;
-  text-transform: uppercase;
+  letter-spacing: -.015em;
+  text-shadow: 0 1px 14px rgba(0,0,0,.22);
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
-.art-category-fintech { background-color: #294f70; }
-.art-category-consulting { background-color: #765b4b; }
-.art-category-edtech { background-color: #356f71; }
-.art-category-education { background-color: #426d7e; }
-.art-category-business { background-color: #89613f; }
-.art-category-marketing { background-color: #905842; }
-.art-category-product { background-color: #62567e; }
-.art-category-service { background-color: #4c756d; }
-.art-category-leadership { background-color: #586e56; }
-.art-variant-1 { background-image: linear-gradient(145deg, rgba(255,255,255,.055), rgba(0,0,0,.08)); }
-.art-variant-2 { background-image: linear-gradient(35deg, rgba(0,0,0,.09), rgba(255,255,255,.04)); }
-.project-card-content { padding: 22px 24px 20px; }
-.project-card-header { margin-bottom: 2px; }
-.project-title { margin-top: 13px; }
-
-[data-theme="dark"] .project-card { background: var(--bg-secondary); }
 
 @media (max-width: 600px) {
-  .projects-grid { grid-template-columns: 1fr; gap: 15px; }
-  .project-card-art { min-height: 225px; padding: 22px; }
-  .project-art-title { right: 20px; bottom: 21px; left: 20px; font-size: 1.3rem; }
-  .project-card-content { padding: 19px; }
+  .project-card-art { height: 132px; padding: 16px 18px; }
+  .project-art-title { font-size: 1.22rem; }
 }

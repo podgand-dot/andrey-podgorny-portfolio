@@ -8,8 +8,9 @@
  *   the open certificate and is removed when the lightbox closes.
  */
 (() => {
-  const { html, render, onReady } = window.PageUtils;
+  const { html, raw, render, onReady } = window.PageUtils;
   const SEARCH_DELAY = 150;
+  const ZOOM_ICON = raw('<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M14 4h6v6M10 20H4v-6M20 4l-6.5 6.5M4 20l6.5-6.5"/></svg>');
 
   function searchableText(cert) {
     return [cert.title, cert.issuer, cert.description, cert.award, cert.year, (cert.skills || []).join(' ')]
@@ -31,6 +32,7 @@
           <img class="cert-thumb" src="${cert.thumbnail || cert.image}" alt="" width="800" height="600"
             loading="lazy" decoding="async">
           ${cert.year ? html`<span class="cert-year-badge">${cert.year}</span>` : ''}
+          <span class="cert-zoom" aria-hidden="true">${ZOOM_ICON}</span>
         </span>
         <span class="cert-body">
           <span class="cert-category-text">${cert.categoryLabel || 'Сертификат'}</span>

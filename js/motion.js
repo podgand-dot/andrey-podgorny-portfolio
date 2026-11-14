@@ -58,7 +58,7 @@
   /* ---------- Reveal on scroll ---------- */
   const selectors = [
     '.metric-card', '.project-card', '.recommendation-card', '.olympiad-card',
-    '.mission-card', '.gallery-item', '.media-card', '.cv-preview-card',
+    '.mission-card', '.edu-card', '.gallery-item', '.media-card', '.cv-preview-card', '.cta-band',
     '.detail-panel', '.experience-entry', '.certificate-card',
     '.section-header > .section-tag', '.section-header > .section-title', '.section-header > .section-subtitle',
     '.projects-filter-bar', '.cert-gallery-tools',
@@ -144,14 +144,13 @@
   function initPointerEffects() {
     if (reducedMotion || !window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
 
+    // A soft light that follows the cursor across the hero (transform only, no repaint).
     const hero = document.querySelector('.hero-section');
-    let spotlight = null;
-    if (hero) {
-      spotlight = document.createElement('div');
-      spotlight.className = 'hero-spotlight';
-      spotlight.setAttribute('aria-hidden', 'true');
-      hero.prepend(spotlight);
-    }
+    if (!hero) return;
+    const spotlight = document.createElement('div');
+    spotlight.className = 'hero-spotlight';
+    spotlight.setAttribute('aria-hidden', 'true');
+    hero.prepend(spotlight);
 
     let pendingPointer = null;
     let frame = 0;
@@ -165,38 +164,20 @@
         pendingPointer = null;
         if (!point || !(point.target instanceof Element)) return;
 
-        if (spotlight && hero.contains(point.target)) {
+        if (hero.contains(point.target)) {
           const rect = hero.getBoundingClientRect();
           // The spotlight rests at 76% / 26% of the hero; move it with a compositor-only transform.
           const dx = point.clientX - rect.left - rect.width * 0.76;
           const dy = point.clientY - rect.top - rect.height * 0.26;
           spotlight.style.transform = `translate3d(${dx.toFixed(1)}px, ${dy.toFixed(1)}px, 0)`;
         }
-
-        const card = point.target.closest('.project-card');
-        if (card) {
-          const rect = card.getBoundingClientRect();
-          const x = Math.max(0, Math.min(1, (point.clientX - rect.left) / rect.width));
-          const y = Math.max(0, Math.min(1, (point.clientY - rect.top) / rect.height));
-          card.style.setProperty('--tilt-x', `${((x - 0.5) * 4).toFixed(2)}deg`);
-          card.style.setProperty('--tilt-y', `${((0.5 - y) * 4).toFixed(2)}deg`);
-          card.style.setProperty('--shine-x', `${(x * 100).toFixed(1)}%`);
-          card.style.setProperty('--shine-y', `${(y * 100).toFixed(1)}%`);
-        }
       });
     }, { passive: true });
 
     document.addEventListener('pointerout', event => {
-      const from = event.target instanceof Element ? event.target.closest('.project-card, .hero-section') : null;
+      const from = event.target instanceof Element ? event.target.closest('.hero-section') : null;
       if (!from || (event.relatedTarget && from.contains(event.relatedTarget))) return;
-      if (from.matches('.project-card')) {
-        from.style.setProperty('--tilt-x', '0deg');
-        from.style.setProperty('--tilt-y', '0deg');
-        from.style.setProperty('--shine-x', '50%');
-        from.style.setProperty('--shine-y', '0%');
-      } else if (spotlight) {
-        spotlight.style.transform = '';
-      }
+      if (spotlight) spotlight.style.transform = '';
     }, { passive: true });
   }
 

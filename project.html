@@ -25,7 +25,7 @@
   <script src="js/project-detail.js" defer></script>
   <script src="js/motion.js" defer></script>
 </head>
-<body>
+<body class="subpage">
   <a class="skip-link" href="#projectDetail">Перейти к содержимому</a>
 
   <header class="navbar">
@@ -35,7 +35,7 @@
         <span>Андрей Подгорный</span>
       </a>
       <nav class="page-nav" aria-label="Основная навигация">
-        <a href="index.html#projects">Проекты</a>
+        <a href="index.html#projects" class="is-section">Проекты</a>
         <a href="certificates.html">Сертификаты</a>
         <a href="experience.html">Опыт работы</a>
         <a href="index.html#cv">CV</a>
@@ -48,8 +48,10 @@
     </div>
   </header>
 
-  <main class="container detail-page project-page" id="projectDetail" tabindex="-1">
-    <p class="empty-state">Загружаю проект…</p>
+  <main class="detail-page project-page" id="projectDetail" tabindex="-1">
+    <div class="container project-state">
+      <p class="empty-state project-loading">Загружаю проект…</p>
+    </div>
   </main>
 
   <footer class="footer">

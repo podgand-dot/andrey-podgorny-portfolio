@@ -69,6 +69,36 @@
 <body>
   <a class="skip-link" href="#main">Перейти к содержимому</a>
 
+  <!-- Line-icon sprite (decorative; every <use> sits inside an aria-hidden svg) -->
+  <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="0" height="0" style="position:absolute;width:0;height:0;overflow:hidden">
+    <defs>
+      <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/><path d="M12 12l7-7M16.5 4.5H19.5V7.5"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></symbol>
+      <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 6H5v1.5A3.5 3.5 0 0 0 8.3 11M16 6h3v1.5A3.5 3.5 0 0 1 15.7 11M12 13v4M8.5 20.5h7M9.5 20.5l.5-3.5h4l.5 3.5"/></symbol>
+      <symbol id="i-medal" viewBox="0 0 24 24"><path d="M8 3h3l1.6 4.6M16 3h-3"/><path d="M8 3l3 6.2M16 3l-3 6.2"/><circle cx="12" cy="15" r="5.8"/><path d="M12 12.4l.9 1.8 2 .3-1.45 1.4.35 2-1.8-.95-1.8.95.35-2-1.45-1.4 2-.3z"/></symbol>
+      <symbol id="i-sigma" viewBox="0 0 24 24"><path d="M17.5 5.5V4h-11l6.5 8-6.5 8h11v-1.5"/></symbol>
+      <symbol id="i-podium" viewBox="0 0 24 24"><path d="M3.5 20.5h17M5 20.5v-7h4.5v7M9.5 20.5v-12h5v12M14.5 20.5v-5H19v5M12 3.5l.7 1.4 1.5.2-1.1 1 .3 1.5-1.4-.7-1.4.7.3-1.5-1.1-1 1.5-.2z"/></symbol>
+      <symbol id="i-landmark" viewBox="0 0 24 24"><path d="M3.5 20.5h17M5.5 17.5h13M6.5 17.5v-7M10 17.5v-7M14 17.5v-7M17.5 17.5v-7M4 10.5h16L12 4z"/></symbol>
+      <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9.5 18h5M10.5 21h3"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.5 1.1 1.3 1.1 2.1v.1h5v-.1c0-.8.4-1.6 1.1-2.1A6 6 0 0 0 12 3z"/></symbol>
+      <symbol id="i-team" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19.5c.5-3.1 2.7-5 5.5-5s5 1.9 5.5 5"/><circle cx="17" cy="9" r="2.5"/><path d="M16.2 14.3c2.3.1 3.9 1.8 4.3 4.7"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.4 2.5 3.7 5.5 3.7 9s-1.3 6.5-3.7 9c-2.4-2.5-3.7-5.5-3.7-9S9.6 5.5 12 3z"/></symbol>
+      <symbol id="i-trend" viewBox="0 0 24 24"><path d="M3.5 17.5l6-6 4 4 7-7.5"/><path d="M15 8h5.5v5.5"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.2a4.3 4.3 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z"/></symbol>
+      <symbol id="i-cross" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4"/><path d="M12 8v8M8 12h8"/></symbol>
+      <symbol id="i-ruler" viewBox="0 0 24 24"><path d="M4 4v16h16z"/><path d="M8 12.5V16h3.5M4 8h2M4 12h2M4 16h2"/></symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2.5 9.5L12 5l9.5 4.5L12 14z"/><path d="M6.5 11.6v4.4c0 1.4 2.5 3 5.5 3s5.5-1.6 5.5-3v-4.4M21.5 9.5v5"/></symbol>
+      <symbol id="i-books" viewBox="0 0 24 24"><path d="M4.5 19V5.5A2.5 2.5 0 0 1 7 3h12.5v14H7a2.5 2.5 0 0 0-2.5 2.5A2.5 2.5 0 0 0 7 22h12.5v-5"/><path d="M9 7.5h6"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M4 7l8 6 8-6"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/></symbol>
+      <symbol id="i-zoom" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.3-4.3M11 8.5v5M8.5 11h5"/></symbol>
+      <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2.5"/><path d="M8.5 7V5.5A1.5 1.5 0 0 1 10 4h4a1.5 1.5 0 0 1 1.5 1.5V7M3 12.5h18M10.5 12.5v1.5h3v-1.5"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></symbol>
+    </defs>
+  </svg>
+
   <!-- ==========================================================================
        HEADER & NAVIGATION
        ========================================================================== -->
@@ -151,7 +181,7 @@
                 <img src="assets/profile/profile.jpg" alt="Андрей Подгорный" class="avatar-img" width="600" height="800" fetchpriority="high">
               </div>
               <div class="avatar-floating-card">
-                <div class="floating-icon" aria-hidden="true">🎯</div>
+                <div class="floating-icon" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" focusable="false"><use href="#i-target"/></svg></div>
                 <div>
                   <div class="floating-title">Фокус на ценности & цифрах</div>
                   <div class="floating-desc">Прикладная юнит-экономика, глубокий анализ данных и измеримый эффект</div>
@@ -187,6 +217,9 @@
         <button type="button" class="filter-btn" data-project-filter="leadership" aria-pressed="false">Лидерство</button>
       </div>
       <div class="projects-grid" id="projectsGrid"><p class="empty-state">Загружаю каталог проектов…</p></div>
+      <div class="projects-more" id="projectsMore" hidden>
+        <button type="button" class="btn btn-secondary projects-toggle" id="projectsToggle" aria-expanded="false" aria-controls="projectsGrid">Показать все проекты</button>
+      </div>
     </div></section>
 
     <!-- ==========================================================================
@@ -227,7 +260,7 @@
                 data-lightbox-title="Рекомендательное письмо: Айбеков Елдос"
                 data-lightbox-issuer="Aibekov Group / Tamos Education (27.02.2025)"
                 aria-haspopup="dialog">
-                <span aria-hidden="true">📄</span> Смотреть оригинал <span aria-hidden="true">➔</span>
+                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-doc"/></svg> Смотреть оригинал <span aria-hidden="true">➔</span>
               </button>
             </figcaption>
           </figure>
@@ -251,7 +284,7 @@
               </div>
 
               <a href="certificates.html?q=Бизнес+Созидания" class="btn btn-sm btn-secondary">
-                <span aria-hidden="true">🏆</span> Смотреть дипломы <span aria-hidden="true">➔</span>
+                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-trophy"/></svg> Смотреть дипломы <span aria-hidden="true">➔</span>
               </a>
             </figcaption>
           </figure>
@@ -275,10 +308,10 @@
 
         <div class="olympiads-grid">
 
-          <article class="olympiad-card">
+          <article class="olympiad-card olympiad-card--gold">
             <div>
               <div class="olympiad-header">
-                <div class="olympiad-medal" aria-hidden="true">🥇</div>
+                <div class="olympiad-medal" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-medal"/></svg></div>
                 <span class="badge badge-gold">Gold Award</span>
               </div>
               <h3 class="olympiad-title">STEMCO International Mathematics Olympiad</h3>
@@ -293,11 +326,11 @@
             </div>
           </article>
 
-          <article class="olympiad-card">
+          <article class="olympiad-card olympiad-card--silver">
             <div>
               <div class="olympiad-header">
-                <div class="olympiad-medal" aria-hidden="true">🥈</div>
-                <span class="badge">Silver Award</span>
+                <div class="olympiad-medal" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-medal"/></svg></div>
+                <span class="badge badge-silver">Silver Award</span>
               </div>
               <h3 class="olympiad-title">STEMCO International Mathematics Olympiad</h3>
               <div class="olympiad-org">StemCo International • Сингапур (Февраль 2025)</div>
@@ -311,11 +344,11 @@
             </div>
           </article>
 
-          <article class="olympiad-card">
+          <article class="olympiad-card olympiad-card--bronze">
             <div>
               <div class="olympiad-header">
-                <div class="olympiad-medal" aria-hidden="true">🥉</div>
-                <span class="badge">2x Bronze Awards</span>
+                <div class="olympiad-medal" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-medal"/></svg></div>
+                <span class="badge badge-bronze">2x Bronze Awards</span>
               </div>
               <h3 class="olympiad-title">STEMCO International Math (Winter & Fall 2024)</h3>
               <div class="olympiad-org">StemCo International • Сингапур (Март & Ноябрь 2024)</div>
@@ -329,10 +362,10 @@
             </div>
           </article>
 
-          <article class="olympiad-card">
+          <article class="olympiad-card olympiad-card--neutral">
             <div>
               <div class="olympiad-header">
-                <div class="olympiad-medal" aria-hidden="true">🇺🇸</div>
+                <div class="olympiad-medal" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-sigma"/></svg></div>
                 <span class="badge">MAA USA</span>
               </div>
               <h3 class="olympiad-title">American Mathematics Competitions (AMC 10)</h3>
@@ -347,11 +380,11 @@
             </div>
           </article>
 
-          <article class="olympiad-card">
+          <article class="olympiad-card olympiad-card--bronze">
             <div>
               <div class="olympiad-header">
-                <div class="olympiad-medal" aria-hidden="true">🥉</div>
-                <span class="badge" lang="kk">III дәрежелі</span>
+                <div class="olympiad-medal" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-medal"/></svg></div>
+                <span class="badge badge-bronze" lang="kk">III дәрежелі</span>
               </div>
               <h3 class="olympiad-title">Республиканская олимпиада «АҚБОТА»</h3>
               <div class="olympiad-org">Министерство просвещения РК • РНПЦ «Дарын» (2024)</div>
@@ -365,10 +398,10 @@
             </div>
           </article>
 
-          <article class="olympiad-card">
+          <article class="olympiad-card olympiad-card--neutral">
             <div>
               <div class="olympiad-header">
-                <div class="olympiad-medal" aria-hidden="true">🦘</div>
+                <div class="olympiad-medal" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-podium"/></svg></div>
                 <span class="badge badge-emerald">6-е место в Алматы</span>
               </div>
               <h3 class="olympiad-title">Международный конкурс «СМАРТ КЕНГУРУ»</h3>
@@ -388,9 +421,15 @@
     </section>
 
     <!-- Certificates and awards -->
-    <section class="section" id="certificates" aria-labelledby="certificatesTitle"><div class="container">
-      <div class="section-header"><span class="section-tag">Подтверждения</span><h2 class="section-title" id="certificatesTitle">Сертификаты и награды</h2><p class="section-subtitle">Олимпиады, проектные достижения, обучение и рекомендации собраны в отдельной галерее.</p></div>
-      <div class="detail-panel"><p class="detail-lead">В каталоге 19 документов с описаниями, поиском и просмотром оригиналов.</p><a class="btn btn-primary" href="certificates.html">Открыть галерею сертификатов →</a></div>
+    <section class="section section--band" id="certificates" aria-labelledby="certificatesTitle"><div class="container">
+      <div class="cta-band cta-band--warm">
+        <div class="cta-band-icon" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-medal"/></svg></div>
+        <div class="cta-band-text">
+          <div class="section-header"><span class="section-tag">Подтверждения</span><h2 class="section-title" id="certificatesTitle">Сертификаты и награды</h2><p class="section-subtitle">Олимпиады, проектные достижения, обучение и рекомендации собраны в отдельной галерее.</p></div>
+          <p class="cta-band-note">В каталоге 19 документов с описаниями, поиском и просмотром оригиналов.</p>
+        </div>
+        <div class="cta-band-action"><a class="btn btn-primary" href="certificates.html">Открыть галерею сертификатов →</a></div>
+      </div>
     </div></section>
 
     <!-- ==========================================================================
@@ -410,7 +449,7 @@
 
           <div class="mission-card">
             <div class="mission-item">
-              <div class="mission-icon" aria-hidden="true">🏛️</div>
+              <div class="mission-icon" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-landmark"/></svg></div>
               <div>
                 <h3 class="mission-item-title">Президент отделения Tamos Education</h3>
                 <p class="mission-item-desc">
@@ -420,7 +459,7 @@
             </div>
 
             <div class="mission-item">
-              <div class="mission-icon" aria-hidden="true">💡</div>
+              <div class="mission-icon" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-bulb"/></svg></div>
               <div>
                 <h3 class="mission-item-title">Бюро реализации ученических идей</h3>
                 <p class="mission-item-desc">
@@ -430,7 +469,7 @@
             </div>
 
             <div class="mission-item">
-              <div class="mission-icon" aria-hidden="true">🤝</div>
+              <div class="mission-icon" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-team"/></svg></div>
               <div>
                 <h3 class="mission-item-title">Организация TAMOS Case Hackathon</h3>
                 <p class="mission-item-desc">
@@ -440,7 +479,7 @@
             </div>
 
             <div class="mission-item">
-              <div class="mission-icon" aria-hidden="true">🌍</div>
+              <div class="mission-icon" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-globe"/></svg></div>
               <div>
                 <h3 class="mission-item-title">Молодежные и социальные программы</h3>
                 <p class="mission-item-desc">
@@ -450,9 +489,10 @@
             </div>
           </div>
 
+          <div class="leadership-side">
           <div class="mission-card">
             <div class="mission-item">
-              <div class="mission-icon" aria-hidden="true">🌐</div>
+              <div class="mission-icon" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-trend"/></svg></div>
               <div>
                 <h3 class="mission-item-title">Участие в венчурных форумах & саммитах</h3>
                 <p class="mission-item-desc">
@@ -465,7 +505,7 @@
             </div>
 
             <div class="mission-item">
-              <div class="mission-icon" aria-hidden="true">🕊️</div>
+              <div class="mission-icon" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-heart"/></svg></div>
               <div>
                 <h3 class="mission-item-title">Международные инициативы ЮНЕСКО</h3>
                 <p class="mission-item-desc">
@@ -475,7 +515,7 @@
             </div>
 
             <div class="mission-item">
-              <div class="mission-icon" aria-hidden="true">🇨🇭</div>
+              <div class="mission-icon" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-cross"/></svg></div>
               <div>
                 <h3 class="mission-item-title">Международная программа K12</h3>
                 <p class="mission-item-desc">
@@ -484,15 +524,25 @@
               </div>
             </div>
           </div>
+          <div class="leadership-actions">
+            <a class="btn btn-primary" href="https://tamos-student-government.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Открыть сайт школьного самоуправления (откроется в новой вкладке)">Открыть сайт школьного самоуправления <span aria-hidden="true">↗</span></a>
+          </div>
+          </div>
 
-        </div>
-        <div class="detail-actions leadership-actions">
-          <a class="btn btn-primary" href="https://tamos-student-government.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Открыть сайт школьного самоуправления (откроется в новой вкладке)">Открыть сайт школьного самоуправления <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
 
-    <section class="section" id="work" aria-labelledby="workTitle"><div class="container"><div class="section-header"><span class="section-tag">Карьера</span><h2 class="section-title" id="workTitle">Опыт работы</h2><p class="section-subtitle">Трудоустройство и стажировки вынесены отдельно от учебных кейсов и проектной деятельности.</p></div><div class="detail-panel"><p>Открыть отдельную страницу опыта работы и стажировок.</p><a class="btn btn-secondary" href="experience.html">Опыт работы →</a></div></div></section>
+    <section class="section section--band" id="work" aria-labelledby="workTitle"><div class="container">
+      <div class="cta-band cta-band--navy">
+        <div class="cta-band-icon" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-briefcase"/></svg></div>
+        <div class="cta-band-text">
+          <div class="section-header"><span class="section-tag">Карьера</span><h2 class="section-title" id="workTitle">Опыт работы</h2><p class="section-subtitle">Трудоустройство и стажировки вынесены отдельно от учебных кейсов и проектной деятельности.</p></div>
+          <p class="cta-band-note">Открыть отдельную страницу опыта работы и стажировок.</p>
+        </div>
+        <div class="cta-band-action"><a class="btn btn-secondary" href="experience.html">Опыт работы →</a></div>
+      </div>
+    </div></section>
 
     <!-- ==========================================================================
          EDUCATION & ACADEMIC LIFE
@@ -509,8 +559,8 @@
 
         <div class="edu-grid">
 
-          <article class="metric-card edu-card">
-            <div class="edu-icon" aria-hidden="true">🇰🇿 📐</div>
+          <article class="edu-card">
+            <div class="edu-icon" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-ruler"/></svg></div>
             <h3 class="edu-title">Tamos Education</h3>
             <div class="edu-meta">Физмат школа • Алматы (2023 — н.в.)</div>
             <p class="edu-desc">
@@ -518,8 +568,8 @@
             </p>
           </article>
 
-          <article class="metric-card edu-card">
-            <div class="edu-icon" aria-hidden="true">🇨🇭 🎓</div>
+          <article class="edu-card">
+            <div class="edu-icon" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-cap"/></svg></div>
             <h3 class="edu-title">Swiss Dual Education K12</h3>
             <div class="edu-meta">Швейцарская программа двойного диплома</div>
             <p class="edu-desc">
@@ -527,8 +577,8 @@
             </p>
           </article>
 
-          <article class="metric-card edu-card">
-            <div class="edu-icon" aria-hidden="true">🇷🇺 🏛️</div>
+          <article class="edu-card">
+            <div class="edu-icon" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-landmark"/></svg></div>
             <h3 class="edu-title">Kinder MBA • Бизнес Созидания</h3>
             <div class="edu-meta">При поддержке ЭФ МГУ (2018 — 2025)</div>
             <p class="edu-desc">
@@ -536,8 +586,8 @@
             </p>
           </article>
 
-          <article class="metric-card edu-card">
-            <div class="edu-icon" aria-hidden="true">🇪🇸 📚</div>
+          <article class="edu-card">
+            <div class="edu-icon" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-books"/></svg></div>
             <h3 class="edu-title">Школа №1252 им. Сервантеса</h3>
             <div class="edu-meta">Москва, Россия (2016 — 2022)</div>
             <p class="edu-desc">
@@ -658,21 +708,21 @@
             </p>
 
             <div class="cv-contacts">
-              <div><span aria-hidden="true">📍</span> <strong>Локация:</strong> Алматы, Казахстан / Москва</div>
-              <div><span aria-hidden="true">✉️</span> <strong>Email:</strong> <a href="mailto:podgand@icloud.com">podgand@icloud.com</a></div>
-              <div><span aria-hidden="true">📱</span> <strong>Телефон:</strong> <a href="tel:+77054451880">+7 (705) 445-18-80</a></div>
+              <div class="cv-contact"><svg class="ico cv-contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg> <span><strong>Локация:</strong> Алматы, Казахстан / Москва</span></div>
+              <div class="cv-contact"><svg class="ico cv-contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg> <span><strong>Email:</strong> <a href="mailto:podgand@icloud.com">podgand@icloud.com</a></span></div>
+              <div class="cv-contact"><svg class="ico cv-contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg> <span><strong>Телефон:</strong> <a href="tel:+77054451880">+7 (705) 445-18-80</a></span></div>
             </div>
 
             <div class="cv-actions">
               <a href="assets/cv/Andrey_Podgorny_CV.pdf" download class="btn btn-primary">
-                <span aria-hidden="true">📥</span> Скачать CV в формате PDF
+                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-download"/></svg> Скачать CV в формате PDF
               </a>
               <button type="button" class="btn btn-secondary"
                 data-lightbox-image="assets/cv/CV.webp"
                 data-lightbox-title="Резюме Андрея Подгорного"
                 data-lightbox-issuer="Andrey Podgorny — CV"
                 aria-haspopup="dialog">
-                <span aria-hidden="true">🔍</span> Открыть на весь экран
+                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-zoom"/></svg> Открыть на весь экран
               </button>
             </div>
           </div>
@@ -711,19 +761,19 @@
         <div class="contact-direct">
           <h2 class="contact-title">Прямая связь</h2>
           <div class="contact-row">
-            <span aria-hidden="true">📍</span>
+            <span class="contact-icon" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg></span>
             <span>Алматы, Казахстан / Москва</span>
           </div>
           <div class="contact-row">
-            <span aria-hidden="true">✉️</span>
+            <span class="contact-icon" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg></span>
             <a href="mailto:podgand@icloud.com">podgand@icloud.com</a>
           </div>
           <div class="contact-row">
-            <span aria-hidden="true">📱</span>
+            <span class="contact-icon" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg></span>
             <a href="tel:+77054451880">+7 (705) 445-18-80</a>
           </div>
           <div class="contact-row">
-            <span aria-hidden="true">💬</span>
+            <span class="contact-icon" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-chat"/></svg></span>
             <a href="https://t.me/podgornis" target="_blank" rel="noopener noreferrer" aria-label="Связаться в Telegram (откроется в новой вкладке)">Связаться в Telegram</a>
           </div>
         </div>
@@ -759,7 +809,7 @@
         </div>
         <div class="lightbox-actions">
           <a href="#" id="lightboxDownloadBtn" download class="btn btn-sm btn-primary">
-            <span aria-hidden="true">📥</span> Скачать
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-download"/></svg> Скачать
           </a>
           <button type="button" class="btn btn-sm btn-secondary" id="lightboxCloseBtn">
             Закрыть

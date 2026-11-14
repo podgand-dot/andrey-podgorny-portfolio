@@ -26,7 +26,7 @@
   <script src="js/lightbox.js" defer></script>
   <script src="js/motion.js" defer></script>
 </head>
-<body>
+<body class="subpage">
   <a class="skip-link" href="#main">Перейти к содержимому</a>
 
   <header class="navbar">
@@ -49,14 +49,20 @@
     </div>
   </header>
 
-  <main class="container detail-page" id="main" tabindex="-1">
-    <div class="detail-kicker">Подтверждения</div>
-    <h1>Сертификаты и награды</h1>
-    <p class="detail-lead">Документы об олимпиадах, проектах, обучении и рекомендациях. Откройте карточку, чтобы посмотреть документ и описание.</p>
+  <main class="detail-page certificates-page" id="main" tabindex="-1">
+    <header class="page-hero">
+      <div class="container page-hero-inner">
+        <div class="detail-kicker">Подтверждения</div>
+        <h1>Сертификаты и награды</h1>
+        <p class="detail-lead">Документы об олимпиадах, проектах, обучении и рекомендациях. Откройте карточку, чтобы посмотреть документ и описание.</p>
+      </div>
+    </header>
 
+    <div class="container page-body">
     <div class="cert-gallery-tools">
       <label class="search-wrap">
         <span class="sr-only">Поиск</span>
+        <svg class="search-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.4-4.4"/></svg>
         <input id="certSearch" type="search" placeholder="Поиск по названию, организации или году" autocomplete="off" aria-controls="certificatesGrid">
       </label>
       <div class="cert-filter-row" role="group" aria-label="Категории">
@@ -69,6 +75,7 @@
     </div>
 
     <div class="certificates-grid" id="certificatesGrid"></div>
+    </div>
   </main>
 
   <footer class="footer">
@@ -79,11 +86,12 @@
 
   <div class="modal-backdrop" id="lightboxModal" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" aria-describedby="lightboxDescription" tabindex="-1">
     <div class="lightbox-container">
+      <button type="button" class="lightbox-close-icon" data-lightbox-close aria-label="Закрыть"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" focusable="false" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
       <div class="lightbox-img-wrap">
         <img id="lightboxImg" class="lightbox-img" alt="" decoding="async">
         <iframe id="lightboxFrame" class="lightbox-frame" title="Документ сертификата" hidden></iframe>
-        <button type="button" class="lightbox-nav lightbox-nav-prev" id="lightboxPrevBtn" aria-label="Предыдущий сертификат" hidden><span aria-hidden="true">‹</span></button>
-        <button type="button" class="lightbox-nav lightbox-nav-next" id="lightboxNextBtn" aria-label="Следующий сертификат" hidden><span aria-hidden="true">›</span></button>
+        <button type="button" class="lightbox-nav lightbox-nav-prev" id="lightboxPrevBtn" aria-label="Предыдущий сертификат" hidden><span aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m14.5 5.5-6.5 6.5 6.5 6.5"/></svg></span></button>
+        <button type="button" class="lightbox-nav lightbox-nav-next" id="lightboxNextBtn" aria-label="Следующий сертификат" hidden><span aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m9.5 5.5 6.5 6.5-6.5 6.5"/></svg></span></button>
       </div>
       <div class="lightbox-details">
         <div class="lightbox-text">

@@ -4,7 +4,7 @@
  * Markup contract (ids inside #lightboxModal; everything except the modal is optional):
  *   #lightboxModal, #lightboxImg, #lightboxFrame, #lightboxTitle, #lightboxSub,
  *   #lightboxDescription, #lightboxAward, #lightboxDownloadBtn, #lightboxCloseBtn,
- *   #lightboxPrevBtn, #lightboxNextBtn.
+ *   #lightboxPrevBtn, #lightboxNextBtn; any [data-lightbox-close] element also closes it.
  *
  * Public API (backward compatible):
  *   window.lightbox.open(data[, options])
@@ -94,6 +94,10 @@
 
     bindEvents() {
       this.closeBtn?.addEventListener('click', () => this.close());
+      // Optional extra close controls (e.g. the round icon button on certificates.html).
+      this.modal.querySelectorAll('[data-lightbox-close]').forEach(button => {
+        button.addEventListener('click', () => this.close());
+      });
       this.prevBtn?.addEventListener('click', () => this.prev());
       this.nextBtn?.addEventListener('click', () => this.next());
 
